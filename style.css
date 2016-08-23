@@ -1,0 +1,168 @@
+/*SECTIONS*/
+body {
+  background-color: #485457;
+  margin: 0;
+  padding: 0;
+}
+.center-col {
+  background-color: #fff;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding: 20px;
+}
+.l-half, .r-half {
+  display: inline-block;
+  height: 500px;
+  width: 50%;
+}
+.l-half {
+  background: #fff;
+  float: left;
+}
+.r-half {
+  background: #fff;
+  float: right;
+}
+#home-half {
+  background-image: url('img/glenn_home.jpg');
+  background-position: right;
+}
+
+
+/*TYPGRAPHY*/
+h1 {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 46px;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+p {
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+
+}
+
+/*NAVIGATION*/
+nav {
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #84876d;
+  position: fixed;
+  overflow: hidden;
+}
+#home-nav {
+  position: relative;
+}
+.xtra-space {
+  height: 50px;
+  width: 100%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav > ul > li > a,
+#home-nav {
+  font-family: 'Lobster Two', cursive;
+  font-size: 18px;
+  color: #f5f5f5;
+  text-decoration: none;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 0.5em;
+}
+nav > ul > li > a:hover {
+  color: #913331;
+}
+
+
+
+
+/*GALLERY*/
+.gallery {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.col {
+  margin-top: 0px;
+  width: 33.33%;
+  float: left;
+  display: inline-block;
+}
+.box {
+  display: block;
+  align-items: center;
+}
+.box > img {
+  width: 100%;
+  margin-top: -3px;
+  margin-bottom: -4px;
+}
+
+
+
+/*LIGHTBOXES*/
+.modal-container {
+  position: fixed;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -400%);
+  -ms-transform: translate(-50%, -400%);
+  transform: translate(-50%, -400%);
+
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+.modal:before {
+  content: "";
+  position: fixed;
+  display: none;
+  background-color: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.modal:target:before {
+  display: block;
+}
+.modal:target .modal-container {
+  top: 10%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#bio {
+  position: relative;
+  width: 480px;
+}
+#biophoto {
+  display: inline-block;
+  float: left;
+  margin-top: 50px;
+
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+  .l-half, .r-half {
+    display: block;
+    width: 100%;
+  }
+  .gallery {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
