@@ -6,8 +6,8 @@ body {
 }
 .center-col {
   background-color: #fff;
-  margin-right: 15%;
-  margin-left: 15%;
+  max-width: 450px;
+  margin: 0 auto;
   padding: 20px;
 }
 .l-half, .r-half {
@@ -80,12 +80,12 @@ button {
 /*NAVIGATION*/
 nav {
   margin: 0;
-  height: 50px;
+  height: auto;
   width: 100%;
   background-color: #84876d;
   box-shadow: 0px 2px 4px #000000;
   position: fixed;
-  overflow: hidden;
+  display: table;
   z-index: 1;
 }
 #home-nav {
@@ -96,12 +96,13 @@ nav {
   width: 100%;
 }
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: auto 0;
+  overflow: auto;
+  list-style-type: none;
 }
 nav ul li {
   display: inline-block;
-  list-style-type: none;
+  float: left;
 }
 nav > ul > li > a,
 #home-nav {
@@ -122,8 +123,8 @@ nav > ul > li > a:hover {
 
 /*GALLERY*/
 .gallery {
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 850px;
+  margin: 0 auto;
 }
 .col {
   margin-top: 0px;
@@ -216,6 +217,12 @@ nav > ul > li > a:hover {
   text-decoration: none;
   color: white;
 }
+
+#poster-col {
+  background-color: #913331;
+  box-shadow: 0px 0px 20px 0px #000000;
+
+}
 .date {
   text-align: center;
   padding-top: 75px;
@@ -243,6 +250,7 @@ nav > ul > li > a:hover {
 #dec-80 {
   background-image: url('img/posters/80s.jpg');
 }
+
 
 /*LIGHTBOXES*/
 .imageCol {
@@ -312,16 +320,23 @@ nav > ul > li > a:hover {
   transform: translate(-50%, 0);
 }
 #biophoto {
-  display: inline-block;
-  float: left;
-  margin-top: 50px;
-  margin-left: 20px;
+  width: 70%;
+  margin: 25px;
+}
+#bio {
+  max-width: 320px;
 }
 
 
 
 
 /*MEDIA QUERIES*/
+@media (max-width: 602px) {
+  .xtra-space {
+    height: 100px;
+  }
+}
+
 @media (max-width: 800px) {
   .l-half, .r-half {
     display: block;
@@ -331,15 +346,7 @@ nav > ul > li > a:hover {
     margin-left: 2%;
     margin-right: 2%;
   }
-  #bio {
-    width: 320px;
-  }
-  #biophoto {
-    display: block;
-    float: none;
-    width: 90%;
-    margin-right: 20px;
-  }
+
   .music-col {
     display: block;
     width: 100%;
