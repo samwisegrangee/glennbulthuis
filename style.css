@@ -330,7 +330,16 @@ nav > ul > li > a:hover {
   max-width: 320px;
 }
 
+/*VIDEOS*/
 
+#videos {
+  background-color: #485457;
+  align-items: center;
+}
+#videos > iframe {
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px #000000;
+}
 
 
 /*MEDIA QUERIES*/
