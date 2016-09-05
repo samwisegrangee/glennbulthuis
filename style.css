@@ -122,9 +122,6 @@ nav > ul > li > a:hover {
   color: #913331;
 }
 
-
-
-
 /*GALLERY*/
 .gallery {
   max-width: 850px;
@@ -320,11 +317,9 @@ audio {
   padding: 20px;
   border-radius: 5px;
   left: 50%;
-  -webkit-transform: translate(-50%, -400%);
-  -ms-transform: translate(-50%, -400%);
-  transform: translate(-50%, -400%);
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
+  transform: translate(-50%);
+  display: none;
+
 }
 .modal-container img {
   width: 100%;
@@ -344,9 +339,7 @@ audio {
 }
 .modal:target .modal-container {
   top: 100px;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  display: block;
 }
 #biophoto {
   width: 70%;
@@ -354,6 +347,9 @@ audio {
 }
 #bio {
   max-width: 320px;
+}
+.album-modal {
+  position: sticky;
 }
 
 /*VIDEOS*/
