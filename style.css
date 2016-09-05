@@ -132,7 +132,8 @@ nav > ul > li > a:hover {
 }
 .col {
   margin-top: 0px;
-  width: 33.33%;
+  min-width: 370px;
+  max-width: 400px;
   float: left;
   display: inline-block;
 }
@@ -158,6 +159,11 @@ nav > ul > li > a:hover {
   padding: 30px;
   font-size: 14px;
 }
+#albums {
+  background-color: #485457;
+  align-items: center;
+}
+
 #album-h {
   display: block;
   margin-top: 50px;
@@ -203,7 +209,12 @@ nav > ul > li > a:hover {
   background-image: url('img/albums/misled.jpg');
   background-size: cover;
 }
-
+.audio-link {
+  font-family: 'Quicksand', sans-serif;
+}
+audio {
+  display: none;
+}
 
 .overlay {
   position: relative;
@@ -372,11 +383,5 @@ nav > ul > li > a:hover {
   .gallery {
     margin-left: 2%;
     margin-right: 2%;
-  }
-
-  .music-col {
-    display: block;
-    width: 100%;
-    float: left;
   }
 }

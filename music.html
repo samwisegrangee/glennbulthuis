@@ -24,7 +24,7 @@
 
     </div>
 
-        <div class="col music-col l-col">
+        <div class="center-col" id="albums">
           <div class="music box" id="album-1">
             <h2 id="album-h">Glenn's Albums</h2>
           </div>
@@ -46,10 +46,6 @@
             </div>
           </a>
 
-        </div>
-
-        <div class="col music-col c-col">
-
           <a href="#greatest_hits_listen"><div class="music box" id="album-4">
               <div class="overlay"><h2>Glenn Bulthuis and the Tonedeafs<br>Greatest Hits (1977-2007)</h2><h2>2008</h2></div>
             </div>
@@ -64,10 +60,6 @@
               <div class="overlay"><h2>Acoustic</h2><h2>1991</h2></div>
             </div>
           </a>
-
-        </div>
-
-        <div class="col music-col r-col">
 
           <a href="#undutchable_listen"><div class="music box" id="album-7">
               <div class="overlay"><h2>The Undutchables</h2><h2>1988</h2></div>
@@ -94,33 +86,55 @@
           <br>
 
           <img class="album-shot" src="img/albums/gloryland.jpg" alt="" />
+          <p class="red-it">Click a song title to hear a snippet with Glenn's comments.</p>
+          <p>
+            Intro
+            <audio controls><source src="gb_music/gloryland/00_snippet_intro.mp3" type="audio/mpeg"></audio>
+          </p>
 
           <ol>
-            <li>Gloryland (Glory Hallelujah)</li>
-            <li>The Power of God</li>
-            <li>The Way that God Is</li>
-            <li>Praise the Lord (Psalm 135)</li>
-            <li>Canaan Land</li>
-            <li>I Will Sing a New Song to the Lord</li>
-            <li>The Prodigal Son (Luke 15)</li>
-            <li>Lord We Raise Our Voices Up</li>
-            <li>Jordan River Roll</li>
-            <li>God is Good</li>
-            <li>I Repent and I Return</li>
-            <li>That Old Time Gospel Music Medley</li>
-            <li>Psalm 139</li>
-
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-1');">Gloryland (Glory Hallelujah)</a>
+              <audio id="gl-1" controls><source src="gb_music/gloryland/01 Snippet Gloryland.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-2');">The Power of God</a>
+              <audio id="gl-2" controls><source src="gb_music/gloryland/02 Snippet Power of God.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-3');">The Way that God Is</a>
+              <audio id="gl-3" controls><source src="gb_music/gloryland/03 Snippet The Way That God is.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-4');">Praise the Lord (Psalm 135)</a>
+              <audio id="gl-4" controls><source src="gb_music/gloryland/04 Snippet Praise the Lord.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-5');">Canaan Land</a>
+              <audio id="gl-5" controls><source src="gb_music/gloryland/05 Snippet Canaan Land.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-6');">I Will Sing a New Song to the Lord</a>
+              <audio id="gl-6" controls><source src="gb_music/gloryland/06 Snippet I will Sing A New Song.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-7');">The Prodigal Son (Luke 15)</a>
+              <audio id="gl-7" controls><source src="gb_music/gloryland/07 Snippet The Prodigal Son.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-8');">Lord We Raise Our Voices Up</a>
+              <audio id="gl-8" controls><source src="gb_music/gloryland/08 Snippet Lord We Lift You Up.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-9');">Jordan River Roll</a>
+              <audio id="gl-9" controls><source src="gb_music/gloryland/09 Snippet Jordan River Roll.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-10');">God is Good</a>
+              <audio id="gl-10" controls><source src="gb_music/gloryland/10 Snippet God Is Good.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-11');">I Repent and I Return</a>
+              <audio id="gl-11" controls><source src="gb_music/gloryland/11 Snippet I Repent And I Return.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-12');">That Old Time Gospel Music Medley</a>
+              <audio id="gl-12" controls><source src="gb_music/gloryland/12 Snippet Gospel Medley.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gl-13');">Psalm 139</a>
+              <audio id="gl-13" controls><source src="gb_music/gloryland/13 Snippet Psalm 139.mp3" type="audio/mpeg"></audio>
+            </li>
           </ol>
+          <a href="#"><button>Close</button></a>
 
-              <!--<p class="style6">Click a song title to hear a snippet with Glenn's comments. <br>
-
-              <a href="#" onclick="MM_openBrWindow('MUSIC/BULTHUIS/00%20Snippet%20Intro.mp3','','width=150,height=200')">Intro.</a></p>
-              <ol>
-                <li>
-                  <a class="eng-v" href="javascript:toggleDiv('gr-1');">Soon as early Dawn appeared, the rosy-fingered,</a>
-                  <div class="gr-underverse" id="gr-1">ἦμος δ' ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς,</div>
-                </li>
-              </ol>-->
           </div>
         </div>
 
@@ -129,23 +143,55 @@
         <div class="modal-container">
           <div class="close"><a href="#">X</a></div><br>
           <img class="album-shot" src="img/albums/greatest_hits.jpg" alt="" />
+          <p class="red-it">Click a song title to hear a snippet with Glenn's comments.</p>
 
           <ol>
-            <li>Calvin Girl</li>
-            <li>Russ' Blueberry Pie</li>
-            <li>LA Girls / Michigan Girls</li>
-            <li>Bluegrass Tune</li>
-            <li>Cruzin' Down the Beltline</li>
-            <li>At The Dance</li>
-            <li>God is in Control</li>
-            <li>The Ladies Literary Club</li>
-            <li>Picking Up Chicks in the CRC Tonight</li>
-            <li>Nights In The Dorms</li>
-            <li>I'm Having a Root Canal</li>
-            <li>Dutch Boys Sing the Blues</li>
-            <li>I See You There</li>
-            <li>Lord Help Me Be</li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-1');">Calvin Girl</a>
+              <audio id="gh-1" controls><source src="gb_music/greatest_hits/01 Calvin Girl.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-2');">Russ' Blueberry Pie</a>
+              <audio id="gh-2" controls><source src="gb_music/greatest_hits/02 Russes.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-3');">LA Girls / Michigan Girls</a>
+              <audio id="gh-3" controls><source src="gb_music/greatest_hits/03 LA Girls Michigan Girls.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-4');">Bluegrass Tune</a>
+              <audio id="gh-4" controls><source src="gb_music/greatest_hits/04 The Bluegrass Tune.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-5');">Cruzin' Down the Beltline</a>
+              <audio id="gh-5" controls><source src="gb_music/greatest_hits/05 Cruzin.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-6');">At The Dance</a>
+              <audio id="gh-6" controls><source src="gb_music/greatest_hits/06 At The Dance.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-7');">God is in Control</a>
+              <audio id="gh-7" controls><source src="gb_music/greatest_hits/07 God Is In Control.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-8');">The Ladies Literary Club</a>
+              <audio id="gh-8" controls><source src="gb_music/greatest_hits/08 Ladies Literary Club.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-9');">Picking Up Chicks in the CRC Tonight</a>
+              <audio id="gh-9" controls><source src="gb_music/greatest_hits/09 Pickin Up Chicks.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-10');">Nights In The Dorms</a>
+              <audio id="gh-10" controls><source src="gb_music/greatest_hits/10 Nights In The Dorm.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-11');">I'm Having a Root Canal</a>
+              <audio id="gh-11" controls><source src="gb_music/greatest_hits/11 Root Canal.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-12');">Dutch Boys Sing the Blues</a>
+              <audio id="gh-12" controls><source src="gb_music/greatest_hits/12 Dutch Boys SingTheBlues.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-13');">I See You There</a>
+              <audio id="gh-13" controls><source src="gb_music/greatest_hits/13 I See You There.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><a class="audio-link" href="javascript:toggleDiv('gh-14');">Lord Help Me Be</a>
+              <audio id="gh-14" controls><source src="gb_music/greatest_hits/14 Lord Help Me Be.mp3" type="audio/mpeg"></audio>
+            </li>
           </ol>
+          <a href="#"><button>Close</button></a>
+
+
           </div>
         </div>
 
@@ -154,25 +200,60 @@
           <div class="modal-container">
             <div class="close"><a href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/gb_psalm.jpg" alt="" />
+            <p class="red-it">Click a song title to hear a snippet with Glenn's comments.</p>
 
             <ol>
-              <li>I Thank You Father</li>
-              <li>I Will Sing of My Redeemer</li>
-              <li>Allelu</li>
-              <li>God Is In Control</li>
-              <li>He's Got The Whole World In His Hands</li>
-              <li>Great Is Thy Faithfulness</li>
-              <li>What A Mighty God We Serve</li>
-              <li>Silent Night</li>
-              <li>Psalm</li>
-              <li>Man In The Middle</li>
-              <li>My God Knows Me Well</li>
-              <li>The Happy Song</li>
-              <li>The Lord's Prayer</li>
-              <li>Jesus Love's Me</li>
-              <li>God's Call </li>
-              <li>Lord Help Me Be</li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-1');">I Thank You Father</a>
+                <audio id="ps-1" controls><source src="gb_music/psalm/01 I Thank You Father.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-2');">I Will Sing of My Redeemer</a>
+                <audio id="ps-2" controls><source src="gb_music/psalm/02 I Will Sing Of My Redeemer.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-3');">Allelu</a>
+                <audio id="ps-3" controls><source src="gb_music/psalm/03 Allelu.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-4');">God Is In Control</a>
+                <audio id="ps-4" controls><source src="gb_music/psalm/04 God Is In Control.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-5');">He's Got The Whole World In His Hands</a>
+                <audio id="ps-5" controls><source src="gb_music/psalm/05 He's Got The Whole World.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-6');">Great Is Thy Faithfulness</a>
+                <audio id="ps-6" controls><source src="gb_music/psalm/06 Great Is Thy Faithfulness.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-7');">What A Mighty God We Serve</a>
+                <audio id="ps-7" controls><source src="gb_music/psalm/07 What A Mighty God We Serve.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-8');">Silent Night</a>
+                <audio id="ps-8" controls><source src="gb_music/psalm/08 Silent Night.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-9');">Psalm</a>
+                <audio id="ps-9" controls><source src="gb_music/psalm/09 Psalm.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-10');">Man In The Middle</a>
+                <audio id="ps-10" controls><source src="gb_music/psalm/10 Man In The Middle.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-11');">My God Knows Me Well</a>
+                <audio id="ps-11" controls><source src="gb_music/psalm/11 My God Know Me Well.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-12');">The Happy Song</a>
+                <audio id="ps-12" controls><source src="gb_music/psalm/12 The Happy Song.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-13');">The Lord's Prayer</a>
+                <audio id="ps-13" controls><source src="gb_music/psalm/13 The Lord's Prayer.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-14');">Jesus Loves Me</a>
+                <audio id="ps-14" controls><source src="gb_music/psalm/14 Jesus Loves Me.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-15');">God's Call</a>
+                <audio id="ps-15" controls><source src="gb_music/psalm/15 God's Call.mp3" type="audio/mpeg"></audio>
+              </li>
+              <li><a class="audio-link" href="javascript:toggleDiv('ps-16');">Lord Help Me Be</a>
+                <audio id="ps-16" controls><source src="gb_music/psalm/16 Lord Help Me Be.mp3" type="audio/mpeg"></audio>
+              </li>
             </ol>
+            <a href="#"><button>Close</button></a>
+
           </div>
         </div>
 
@@ -198,6 +279,8 @@
               <li>Jana Lynn</li>
               <li>If We Have Not Love</li>
             </ol>
+            <a href="#"><button>Close</button></a>
+
           </div>
         </div>
 
@@ -226,6 +309,7 @@
               <li>One Love</li>
               <li>Create in Me</li>
             </ol>
+            <a href="#"><button>Close</button></a>
 
           </div>
         </div>
@@ -249,6 +333,7 @@
               <li>That Lonesome Road</li>
               <li>Pickin' Up Chicks</li>
             </ol>
+            <a href="#"><button>Close</button></a>
 
           </div>
         </div>
@@ -272,6 +357,7 @@
               <li>It's Been Three Years Since</li>
               <li>Lord Help Me Be</li>
             </ol>
+            <a href="#"><button>Close</button></a>
 
           </div>
         </div>

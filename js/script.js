@@ -11,9 +11,6 @@ $( document ).ready(function() {
       $('#lightBox').fadeIn();
   });
 
-//  $('#img-capt').each(function() {
-//   $(this).after( "<div class='caption'><p>" + title + "</p></div>" );})
-
   $('#lightBox').click(function () {
     $(this).fadeOut(); //this will hide the fullscreen div if you click it
   });
