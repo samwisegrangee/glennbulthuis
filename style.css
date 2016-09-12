@@ -67,8 +67,9 @@ a {
   text-decoration: none;
 }
 button {
-  width: 160px;
-  height: 40px;
+  position: relative;
+  width: 200px;
+  height: 50px;
   margin-top: 12px;
   margin-left: 24px;
   background-color: #913331;
@@ -86,6 +87,7 @@ nav {
   margin: 0;
   height: auto;
   width: 100%;
+  align-items: center;
   background-color: #84876d;
   box-shadow: 0px 2px 4px #000000;
   position: fixed;

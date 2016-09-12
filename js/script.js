@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 //Lightbox Display with Clicked Image
-  $('#lightBox').css('height', $(document).outerWidth() + 'px');//for when an image is clicked
+  $('#lightBox').css('height', $(document).outerWidth() + 'vh');//for when an image is clicked
   $('.imgSm').click(function () {
       var src = $(this).attr('src'); //get the source attribute of the clicked image
       var title=$(this).attr('title'); //get the title attribut of clicked image
