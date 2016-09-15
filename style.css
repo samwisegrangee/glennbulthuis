@@ -61,6 +61,10 @@ h1 {
   margin-top: 200px;
   margin-left: 50px;
 }
+.l-col h2 {
+  margin-left: 50px;
+  text-shadow: 2px 2px 4px #000000;
+}
 h2 {
   color: white;
   font-family: 'Playfair Display', serif;
@@ -155,7 +159,7 @@ nav {
   width: 100%;
   height: 100%;
   align-items: center;
-  border: 1px solid rgb(132, 135, 109);
+  border: 3px solid rgb(132, 135, 109);
 }
 .navOver:hover {
   background-color: rgba(132, 135, 109, 0.8);
@@ -287,7 +291,6 @@ audio {
   background-color: rgba(0,0,0,.6);
   height: 100%;
   width: 100%;
-  margin-top: -24px;
   opacity: 0;
 }
 .overlay:hover {
