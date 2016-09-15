@@ -1,7 +1,8 @@
-/*SECTIONS*/
-html {
-  margin: 0;
-  padding: 0;
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 body {
   background-color: #485457;
@@ -106,11 +107,67 @@ nav {
 }
 #home-nav {
   position: relative;
+  height: 215px;
 }
 .xtra-space {
   height: 50px;
   width: 100%;
 }
+.row {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.navBox {
+  width: 25%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  background-position: center center;
+  box-shadow: 0 0 35px rgba(0,0,0,0.9) inset;
+}
+#home {
+  background-image: url('img/thumb_1.jpg');
+}
+#news {
+  background-image: url('img/thumb_2.jpg');
+}
+#bio {
+  background-image: url('img/thumb_3.jpg');
+}
+#music {
+  background-image: url('img/thumb_4.jpg');
+}
+#videos {
+  background-image: url('img/thumb_5.jpg');
+}
+#photos {
+  background-image: url('img/thumb_6.jpg');
+}
+#posters {
+  background-image: url('img/thumb_7.jpg');
+}
+#contact {
+  background-image: url('img/thumb_8.jpg');
+}
+.navOver {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 1px solid rgb(132, 135, 109);
+}
+.navOver:hover {
+  background-color: rgba(132, 135, 109, 0.8);
+}
+.navOver span {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  display:table;
+  margin:0 auto;
+  padding-top: 20px;
+}
+
 nav ul {
   margin: auto 0;
   overflow: auto;
@@ -366,11 +423,11 @@ audio {
 
 /*VIDEOS*/
 
-#videos {
+#video_col {
   background-color: #485457;
   align-items: center;
 }
-#videos > iframe {
+#video_col > iframe {
   margin-bottom: 20px;
   box-shadow: 2px 2px 4px #000000;
 }
