@@ -128,32 +128,39 @@ nav {
   padding: 0;
   margin: 0;
   float: left;
-  background-position: center center;
+  background-position: top;
+  background-size: cover;
   box-shadow: 0 0 35px rgba(0,0,0,0.9) inset;
 }
 #home {
-  background-image: url('img/thumb_1.jpg');
+  background-image: url('img/photos/1991_Acoustic_001B.jpg');
 }
 #news {
-  background-image: url('img/thumb_2.jpg');
+  background-image: url('img/albums/misled.jpg');
 }
 #bio {
-  background-image: url('img/thumb_3.jpg');
+  background-image: url('img/photos/Manhat_79_001B.jpg');
 }
 #music {
-  background-image: url('img/thumb_4.jpg');
+  background-image: url('img/photos/buddy_thumb.png');
+  background-position: center;
 }
 #videos {
-  background-image: url('img/thumb_5.jpg');
+  background-image: url('img/photos/greatest_hits.jpg');
+  background-position: 0 12%;
+
 }
 #photos {
-  background-image: url('img/thumb_6.jpg');
+  background-image: url('img/photos/Tonedefs_82_001B.jpg');
 }
 #posters {
-  background-image: url('img/thumb_7.jpg');
+  background-image: url('img/posters/2001_CRC.jpg');
+  background-position: 0 12%;
 }
 #contact {
-  background-image: url('img/thumb_8.jpg');
+  background-image: url('img/photos/Disco_Sucks_001B.jpg');
+  background-position: 0 12%;
+
 }
 .navOver {
   width: 100%;
@@ -171,7 +178,6 @@ nav {
   margin:0 auto;
   padding-top: 20px;
 }
-
 nav ul {
   margin: auto 0;
   overflow: auto;
@@ -233,7 +239,6 @@ nav > ul > li > a:hover {
   background-color: #485457;
   align-items: center;
 }
-
 #album-h {
   display: block;
   margin-top: 50px;
@@ -422,6 +427,7 @@ audio {
 }
 .cent_img {
   width: 100%;
+  padding-top: 20px;
 }
 
 /*VIDEOS*/
