@@ -19,6 +19,7 @@ body {
   display: inline-block;
   height: 500px;
   width: 50%;
+  box-shadow: 0px 2px 20px #000000;
 }
 .l-half {
   background: #fff;
@@ -31,7 +32,6 @@ body {
 .container {
   margin-top: 10%;
   margin-bottom: 10%;
-  box-shadow: 0px 2px 4px #000000;
 }
 #home-half {
   background-image: url('img/glenn_home.jpg');
@@ -453,6 +453,7 @@ audio {
   .l-half, .r-half {
     display: block;
     width: 100%;
+    box-shadow: none;
   }
   .gallery {
     margin-left: 2%;
