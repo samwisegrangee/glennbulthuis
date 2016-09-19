@@ -1,4 +1,3 @@
-
 * {
   margin:0;
   padding:0;
@@ -17,25 +16,30 @@ body {
 }
 .l-half, .r-half {
   display: inline-block;
-  height: 500px;
+  height: 550px;
   width: 50%;
-  box-shadow: 0px 2px 20px #000000;
 }
 .l-half {
   background: #fff;
   float: left;
+  box-shadow: 0px 4px 16px #000,
+              0px -4px 16px #000;
 }
 .r-half {
   background: #fff;
   float: right;
+  box-shadow: 2px 4px 16px #000,
+              2px -4px 16px #000;
 }
 .container {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 8%;
+
 }
 #home-half {
   background-image: url('img/glenn_home.jpg');
   background-position: right;
+  background-repeat: no-repeat;
+  background-color: #913331;
 }
 .red-it {
   color: #913331;
@@ -104,7 +108,7 @@ nav {
   width: 100%;
   align-items: center;
   background-color: #84876d;
-  box-shadow: 0px 2px 4px #000000;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.8);
   position: fixed;
   display: table;
   z-index: 1;
@@ -286,11 +290,11 @@ nav > ul > li > a:hover {
 }
 .audio-link {
   font-family: 'Quicksand', sans-serif;
+  color: #485457;
 }
 audio {
   display: none;
 }
-
 .overlay {
   position: relative;
   background-color: rgba(0,0,0,.6);
@@ -306,6 +310,9 @@ audio {
   text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
   color: white;
+}
+.album-modal ol {
+  padding-left: 30px;
 }
 
 #poster-col {
@@ -396,7 +403,6 @@ audio {
   left: 50%;
   transform: translate(-50%);
   display: none;
-
 }
 .modal-container img {
   width: 100%;
@@ -449,7 +455,7 @@ audio {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   .l-half, .r-half {
     display: block;
     width: 100%;

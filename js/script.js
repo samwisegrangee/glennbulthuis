@@ -34,3 +34,8 @@ document.addEventListener('play', function(e){
         }
     }
 }, true);
+
+//$('.album_listen').click(function(){
+//    $("html, body").animate({ scrollTop: 0 }, 600);
+//    return false;
+// });
