@@ -17,7 +17,7 @@ body {
 }
 .l-half, .r-half {
   display: inline-block;
-  height: 550px;
+  height: 600px;
   width: 50%;
 }
 .l-half {
@@ -481,6 +481,10 @@ audio {
   .container {
     margin-top: 0;
   }
+  .l-col h1 {
+     padding-top: 200px;
+     padding-left: 30px;
+   }
   .gallery {
     margin-left: 2%;
     margin-right: 2%;
