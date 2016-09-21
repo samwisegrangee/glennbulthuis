@@ -178,8 +178,8 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 46px;
   text-shadow: 2px 2px 4px #000000;
-  margin-top: 200px;
-  margin-left: 50px;
+  padding-top: 200px;
+  padding-left: 30px;
 }
 .l-col h2 {
   margin-left: 50px;
@@ -481,10 +481,6 @@ audio {
   .container {
     margin-top: 0;
   }
-  .l-col h1 {
-     padding-top: 200px;
-     padding-left: 30px;
-   }
   .gallery {
     margin-left: 2%;
     margin-right: 2%;
