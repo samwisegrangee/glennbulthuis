@@ -10,7 +10,8 @@ body {
 }
 .center-col {
   background-color: #fff;
-  max-width: 450px;
+  max-width: 500px;
+  height: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -21,25 +22,24 @@ body {
 }
 .l-half {
   background: #fff;
-  float: left;
-  box-shadow: 0px 4px 16px #000,
-              0px -4px 16px #000;
 }
 .r-half {
   background: #fff;
   float: right;
-  box-shadow: 2px 4px 16px #000,
-              2px -4px 16px #000;
+
 }
 .container {
-  margin-top: 8%;
-
+  margin-top: 5%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 2px 4px 16px #000,
+              2px -4px 16px #000;
 }
 #home-half {
   background-image: url('img/glenn_home.jpg');
   background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #913331;
 }
 .red-it {
   color: #913331;
@@ -50,76 +50,65 @@ body {
 #welcome {
   padding-left: 20px;
 }
-
-
-
-/*TYPGRAPHY
-font-family: 'Playfair Display', serif;
-font-family: 'Quicksand', sans-serif;
-*/
-h1 {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 46px;
-  text-shadow: 2px 2px 4px #000000;
-  margin-top: 200px;
-  margin-left: 50px;
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: auto;
 }
-.l-col h2 {
-  margin-left: 50px;
-  text-shadow: 2px 2px 4px #000000;
-}
-h2 {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: .04em;
-  font-size: 30px;
-  text-shadow: 2px 2px 4px #000000;
-}
-p {
-  padding: 20px;
-  font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
-}
-a {
-  text-decoration: none;
-}
-button {
+.title {
   position: relative;
-  display: inline;
-  width: 200px;
   height: 50px;
-  margin-top: 12px;
-  margin-left: 24px;
-  background-color: #913331;
-  border: none;
-  box-shadow: 2px 2px 4px #000000;
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px #000000;
-  color: white;
-  cursor: pointer;
+  background-color: rgb(40,40,40);
+  text-align: center;
 }
+.title h2 {
+  color: white;
+  display: block;
+}
+.xtra-space {
+  height: 100px;
+  width: 100%;
+}
+
 
 /*NAVIGATION*/
 nav {
   margin: 0;
-  height: auto;
+  height: 50px;
   width: 100%;
-  align-items: center;
   background-color: #84876d;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.8);
-  position: fixed;
-  display: table;
-  z-index: 1;
+  position: relative;
 }
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 14px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+nav ul li a,
+#home-nav {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #f5f5f5;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #913331;
+}
+
 #home-nav {
   position: relative;
   height: 215px;
-}
-.xtra-space {
-  height: 50px;
-  width: 100%;
 }
 .row {
   position: relative;
@@ -152,7 +141,6 @@ nav {
 #videos {
   background-image: url('img/photos/greatest_hits.jpg');
   background-position: 0 12%;
-
 }
 #photos {
   background-image: url('img/photos/Tonedefs_82_001B.jpg');
@@ -164,13 +152,12 @@ nav {
 #contact {
   background-image: url('img/photos/Disco_Sucks_001B.jpg');
   background-position: 0 12%;
-
 }
 .navOver {
   width: 100%;
   height: 100%;
   align-items: center;
-  border: 3px solid rgb(132, 135, 109);
+  border: 1px solid white;
 }
 .navOver:hover {
   background-color: rgba(132, 135, 109, 0.8);
@@ -179,30 +166,57 @@ nav {
   color: white;
   text-shadow: 2px 2px 4px #000000;
   display:table;
-  margin:0 auto;
+  margin: 0 auto;
   padding-top: 20px;
 }
-nav ul {
-  margin: auto 0;
-  overflow: auto;
-  list-style-type: none;
-}
-nav ul li {
-  display: inline-block;
-  float: left;
-}
-nav > ul > li > a,
-#home-nav {
+/*TYPGRAPHY
+font-family: 'Playfair Display', serif;
+font-family: 'Lora', serif;
+*/
+h1 {
+  color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  color: #f5f5f5;
-  text-decoration: none;
-  display: block;
-  line-height: 2em;
-  padding: 0.5em 0.5em;
+  font-size: 46px;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 200px;
+  margin-left: 50px;
 }
-nav > ul > li > a:hover {
-  color: #913331;
+.l-col h2 {
+  margin-left: 50px;
+  text-shadow: 2px 2px 4px #000000;
+}
+h2 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .04em;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+p {
+  padding: 20px;
+  font-family: 'Lora', serif;
+  line-height: 20px;
+  font-size: 16px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+button {
+  position: relative;
+  display: inline;
+  width: 200px;
+  height: 50px;
+  margin-top: 12px;
+  margin-left: 24px;
+  background-color: #913331;
+  border: none;
+  box-shadow: 2px 2px 4px #000000;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  cursor: pointer;
 }
 
 /*GALLERY*/
@@ -249,12 +263,17 @@ nav > ul > li > a:hover {
   height: 150px;
 }
 #album-1 {
-  background-color: #913331;
+  background-image: url('img/albums/albums.jpg');
+  background-size: cover;
 }
 #album-2 {
-  background-color: white;
-  box-shadow:inset 0px 0px 0px 20px #485457;
+  background-color: rgb(40,40,40);
 }
+ .album-cta {
+  background-color: white;
+  margin: 20px;
+}
+
 #album-3 {
   background-image: url('img/albums/gloryland.jpg');
   background-size: cover;
@@ -289,7 +308,7 @@ nav > ul > li > a:hover {
   background-size: cover;
 }
 .audio-link {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Lora', serif;
   color: #485457;
 }
 audio {
@@ -310,6 +329,7 @@ audio {
   text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
   color: white;
+  padding-top: 15px;
 }
 .album-modal ol {
   padding-left: 30px;
@@ -378,9 +398,8 @@ audio {
   max-width: 80vw;
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 125px;
 }
-
 .caption {
   position: relative;
   display: inline;
@@ -421,7 +440,7 @@ audio {
   display: block;
 }
 .modal:target .modal-container {
-  top: 100px;
+  top: 125px;
   display: block;
 }
 #biophoto {
@@ -432,8 +451,11 @@ audio {
   max-width: 320px;
 }
 .cent_img {
-  width: 100%;
+  width: 75%;
   padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*VIDEOS*/
@@ -449,11 +471,6 @@ audio {
 
 
 /*MEDIA QUERIES*/
-@media (max-width: 602px) {
-  .xtra-space {
-    height: 100px;
-  }
-}
 
 @media (max-width: 750px) {
   .l-half, .r-half {
@@ -464,5 +481,16 @@ audio {
   .gallery {
     margin-left: 2%;
     margin-right: 2%;
+  }
+}
+@media (max-width: 642px) {
+  nav ul {
+    padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .title h2 {
+    font-size: 18px;
+    padding-top: 10px;
   }
 }
