@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glenn Bulthuis</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
@@ -52,7 +52,7 @@ A return to wackiness. With the release of the Tonedeafs 'Greatest Hits' we retu
         <img class="imgSm" src="img/posters/2012_gloryland.jpg" title="" />
         <img class="imgSm" src="img/posters/2016_simon_garfunkel.jpg" title="" />
         <br>
-        <a href="#"><button>Close</button></a>
+        <div class="close"><a href="#"><button>Close</button></a></div>
       </div>
     </div>
 
@@ -81,7 +81,7 @@ Photo by John Corveau." />
 I have no idea what this was all about.
 Photo by John Corveau." />
         <br>
-        <a href="#"><button>Close</button></a>
+        <div class="close"><a href="#"><button>Close</button></a></div>
       </div>
     </div>
 
@@ -114,7 +114,7 @@ Photo by Dale Gerling." />
 We shot this in Inglewood, California not far from where I grew up. A new freeway was coming through, so some houses were boarded up. This photo features Dorian Holley (leather jacket), who I grew up with. He was just off a tour with Michael Jackson. Dr. Floyd McGregor (headband) is also a boyhood friend.
 Photo by Dale Gerling." />
         <br>
-        <a href="#"><button>Close</button></a>
+        <div class="close"><a href="#"><button>Close</button></a></div>
       </div>
     </div>
 
@@ -128,13 +128,13 @@ Photo by Dale Gerling." />
         <img class="imgSm" src="img/posters/1978.jpg" title="" />
         <img class="imgSm" src="img/posters/1979.jpg" title="" />
         <br>
-        <a href="#"><button>Close</button></a>
+        <div class="close"><a href="#"><button>Close</button></a></div>
       </div>
     </div>
 
     <div class="center-col" id="poster-col">
 
-      <a href="#gall-2000">
+      <a href="#gall-2000" id="gall-2000-open">
         <div class="decade" id="dec-2000">
           <div class="dec-cover">
             <div class="date"><h2>The 2000's</h2></div>
@@ -142,7 +142,7 @@ Photo by Dale Gerling." />
         </div>
       </a>
 
-      <a href="#gall-90">
+      <a href="#gall-90" id="gall-90-open">
         <div class="decade" id="dec-90">
           <div class="dec-cover">
             <div class="date"><h2>The 90's</h2></div>
@@ -150,7 +150,7 @@ Photo by Dale Gerling." />
         </div>
       </a>
 
-      <a href="#gall-80">
+      <a href="#gall-80" id="gall-80-open">
         <div class="decade" id="dec-80">
           <div class="dec-cover">
             <div class="date"><h2>The 80's</h2></div>
@@ -158,7 +158,7 @@ Photo by Dale Gerling." />
         </div>
       </a>
 
-      <a href="#gall-70">
+      <a href="#gall-70" id="gall-70-open">
         <div class="decade" id="dec-70">
           <div class="dec-cover">
             <div class="date"><h2>The 70's</h2></div>
@@ -169,11 +169,11 @@ Photo by Dale Gerling." />
     </div>
 
     <div id="lightBox">
-        <img src="" title="" />
-        <div class="caption"><p id="img-capt"></p></div>
-
+      <img src="" title="" />
+      <div class="caption"><p id="img-capt"></p></div>
     </div>
 
+    <footer><p>All content copyright of <a href="www.glennbulthuis.com">Glenn Bulthuis, Jr</a> <br> Website by <a href="https://samwisegrangee.github.io/samgranger/" target="_blank">Sam Granger</a> 2016</p></footer>
 
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

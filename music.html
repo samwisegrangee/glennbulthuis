@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glenn Bulthuis</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
@@ -50,37 +50,37 @@
             </div>
           </div>
 
-          <a href="#gloryland_listen"><div class="music box" id="album-3">
+          <a href="#gloryland_listen" id="gloryland_listen-open"><div class="music box" id="album-3">
               <div class="overlay"><h2>Gloryland</h2><h2>2012</h2></div>
             </div>
           </a>
 
-          <a href="#greatest_hits_listen"><div class="music box" id="album-4">
-              <div class="overlay"><h2>Glenn Bulthuis and the Tonedeafs<br>Greatest Hits (1977-2007)</h2><h2>2008</h2></div>
+          <a href="#greatest_hits_listen" id="greatest_hits_listen-open"><div class="music box" id="album-4">
+              <div class="overlay"><h3>Glenn Bulthuis and the Tonedeafs<br>Greatest Hits (1977-2007)</h3><h2>2008</h2></div>
             </div>
           </a>
 
-          <a href="#psalm_listen"><div class="music box" id="album-5">
+          <a href="#psalm_listen" id="psalm_listen-open"><div class="music box" id="album-5">
               <div class="overlay"><h2>Psalm</h2><h2>2002</h2></div>
             </div>
           </a>
 
-          <a href="#acoustic_listen"><div class="music box" id="album-6">
+          <a href="#acoustic_listen" id="acoustic_listen-open"><div class="music box" id="album-6">
               <div class="overlay"><h2>Acoustic</h2><h2>1991</h2></div>
             </div>
           </a>
 
-          <a href="#undutchable_listen"><div class="music box" id="album-7">
+          <a href="#undutchable_listen" id="undutchable_listen-open"><div class="music box" id="album-7">
               <div class="overlay"><h2>The Undutchables</h2><h2>1988</h2></div>
             </div>
           </a>
 
-          <a href="#album_listen"><div class="music box" id="album-8">
+          <a href="#album_listen" id="album_listen-open"><div class="music box" id="album-8">
               <div class="overlay"><h2>Album</h2><h2>1981</h2></div>
             </div>
           </a>
 
-          <a href="#misled_listen"><div class="music box" id="album-9">
+          <a href="#misled_listen" id="misled_listen-open"><div class="music box" id="album-9">
               <div class="overlay"><h2>Misled</h2><h2>1980</h2></div>
             </div>
           </a>
@@ -91,7 +91,7 @@
         <div class="modal" id="gloryland_listen">
 
         <div class="modal-container album-modal">
-          <div class="close"><a href="#">X</a></div>
+          <div class="close"><a class="red-it" href="#">X</a></div>
           <br>
 
           <img class="album-shot" src="img/albums/gloryland.jpg" alt="" />
@@ -142,7 +142,7 @@
               <audio id="gl-13" controls><source src="gb_music/gloryland/13 Snippet Psalm 139.mp3" type="audio/mpeg"></audio>
             </li>
           </ol>
-          <a href="#"><button>Close</button></a>
+          <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -150,7 +150,8 @@
         <div class="modal" id="greatest_hits_listen">
 
         <div class="modal-container album-modal">
-          <div class="close"><a href="#">X</a></div><br>
+          <div class="close"><a class="red-it" href="#">X</a></div>
+          <br>
           <img class="album-shot" src="img/albums/greatest_hits.jpg" alt="" />
           <p>Click a song title to hear a snippet with Glenn's comments.</p>
 
@@ -198,8 +199,7 @@
               <audio id="gh-14" controls><source src="gb_music/greatest_hits/14 Lord Help Me Be.mp3" type="audio/mpeg"></audio>
             </li>
           </ol>
-          <a href="#"><button>Close</button></a>
-
+          <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -207,7 +207,7 @@
         <div class="modal" id="psalm_listen">
 
           <div class="modal-container album-modal">
-            <div class="close"><a href="#">X</a></div><br>
+            <div class="close"><a class="red-it" href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/gb_psalm.jpg" alt="" />
             <p>Click a song title to hear a snippet with Glenn's comments.</p>
 
@@ -261,7 +261,7 @@
                 <audio id="ps-16" controls><source src="gb_music/psalm/16 Lord Help Me Be.mp3" type="audio/mpeg"></audio>
               </li>
             </ol>
-            <a href="#"><button>Close</button></a>
+            <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -269,7 +269,7 @@
         <div class="modal" id="acoustic_listen">
 
           <div class="modal-container album-modal">
-            <div class="close"><a href="#">X</a></div><br>
+            <div class="close"><a class="red-it" href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/gb_acoustic.jpg" alt="" />
 
             <ol>
@@ -288,7 +288,7 @@
               <li>Jana Lynn</li>
               <li>If We Have Not Love</li>
             </ol>
-            <a href="#"><button>Close</button></a>
+            <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -296,7 +296,7 @@
         <div class="modal" id="undutchable_listen">
 
           <div class="modal-container album-modal">
-            <div class="close"><a href="#">X</a></div><br>
+            <div class="close"><a class="red-it" href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/gb_undutchables.jpg" alt="" />
 
             <p>
@@ -318,7 +318,7 @@
               <li>One Love</li>
               <li>Create in Me</li>
             </ol>
-            <a href="#"><button>Close</button></a>
+            <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -326,7 +326,7 @@
         <div class="modal" id="album_listen">
 
           <div class="modal-container album-modal">
-            <div class="close"><a href="#">X</a></div><br>
+            <div class="close"><a class="red-it" href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/gb_album.jpg" alt="" />
 
             <ol>
@@ -342,7 +342,7 @@
               <li>That Lonesome Road</li>
               <li>Pickin' Up Chicks</li>
             </ol>
-            <a href="#"><button>Close</button></a>
+            <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
@@ -350,7 +350,7 @@
         <div class="modal" id="misled_listen">
 
           <div class="modal-container album-modal">
-            <div class="close"><a href="#">X</a></div><br>
+            <div class="close"><a class="red-it" href="#">X</a></div><br>
             <img class="album-shot" src="img/albums/misled.jpg" alt="" />
 
             <ol>
@@ -366,10 +366,11 @@
               <li>It's Been Three Years Since</li>
               <li>Lord Help Me Be</li>
             </ol>
-            <a href="#"><button>Close</button></a>
+            <div class="close"><a href="#"><button>Close</button></a></div>
 
           </div>
         </div>
+        <footer><p>All content copyright of <a href="www.glennbulthuis.com">Glenn Bulthuis, Jr</a> <br> Website by <a href="https://samwisegrangee.github.io/samgranger/" target="_blank">Sam Granger</a> 2016</p></footer>
 
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
