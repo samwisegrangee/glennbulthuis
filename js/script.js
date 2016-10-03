@@ -14,6 +14,11 @@ $( document ).ready(function() {
   $('#lightBox').click(function () {
     $(this).fadeOut(); //this will hide the fullscreen div if you click it
   });
+
+
+});
+$(document).ready(function() {
+  $('#promoBox').delay(2000).fadeIn(500);
 });
 
 //Toggle visibility of Song Players by Id
