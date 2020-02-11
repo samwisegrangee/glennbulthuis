@@ -241,12 +241,18 @@ h2, h3 {
 #bio-title {
   padding: 20px;
 }
-p {
+p,{
   padding: 20px;
   font-family: 'Lora', serif;
   line-height: 20px;
   font-size: 16px;
   overflow: hidden;
+}
+.gigs ul {
+  padding: 10px 20px;
+  font-family: 'Lora', serif;
+  line-height: 20px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -406,6 +412,12 @@ audio {
   background-color: rgba(0,0,0,.4);
   height: 100%;
   width: 100%;
+}
+#dec-2020 {
+  background-image: url('img/posters/Tonedeafs-Sgt-Pepper-Jenison-Poster-09-16-19.jpg');
+}
+#dec-2010 {
+  background-image: url('img/posters/2010s.jpg');
 }
 #dec-2000 {
   background-image: url('img/posters/2000s.jpg');
@@ -572,6 +584,17 @@ audio {
 #promoBox {
   margin-top: 50px;
   padding-bottom: 20px;
+}
+#promoBox .flexbox {
+  display: flex;
+  justify-content: center;
+}
+#promoBox .flexbox .column {
+  flex: 1;
+  padding: 1em;
+}
+#promoBox .column img {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .home {
